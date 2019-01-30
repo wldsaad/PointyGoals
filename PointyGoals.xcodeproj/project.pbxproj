@@ -8,22 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		9A2734402201799500A69CB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A27343F2201799500A69CB1 /* AppDelegate.swift */; };
-		9A2734422201799500A69CB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2734412201799500A69CB1 /* ViewController.swift */; };
+		9A2734422201799500A69CB1 /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2734412201799500A69CB1 /* GoalsVC.swift */; };
 		9A2734452201799500A69CB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2734432201799500A69CB1 /* Main.storyboard */; };
 		9A2734482201799500A69CB1 /* PointyGoals.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A2734462201799500A69CB1 /* PointyGoals.xcdatamodeld */; };
 		9A27344A2201799600A69CB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2734492201799600A69CB1 /* Assets.xcassets */; };
 		9A27344D2201799600A69CB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A27344B2201799600A69CB1 /* LaunchScreen.storyboard */; };
+		9A27345A22017E1E00A69CB1 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A27345922017E1E00A69CB1 /* GoalCell.swift */; };
+		9A27345C22017E3000A69CB1 /* GoalXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A27345B22017E3000A69CB1 /* GoalXib.xib */; };
+		9A27345F220185B100A69CB1 /* GoalXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A27345E220185B100A69CB1 /* GoalXibView.swift */; };
+		9A27346122018C0500A69CB1 /* AddGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A27346022018C0500A69CB1 /* AddGoalVC.swift */; };
+		9A27346422018D4500A69CB1 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A27346322018D4500A69CB1 /* UIViewControllerExtension.swift */; };
+		9A2734672201910800A69CB1 /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2734662201910800A69CB1 /* KMPlaceholderTextView.swift */; };
+		9A2734692201952900A69CB1 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2734682201952900A69CB1 /* UIButtonExtension.swift */; };
+		9A27346B2201963D00A69CB1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A27346A2201963D00A69CB1 /* UIViewExtension.swift */; };
+		9A27346D22019FC700A69CB1 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A27346C22019FC700A69CB1 /* GoalType.swift */; };
+		9A27346F2201A97F00A69CB1 /* SaveGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A27346E2201A97F00A69CB1 /* SaveGoalVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9A27343C2201799500A69CB1 /* PointyGoals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PointyGoals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A27343F2201799500A69CB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9A2734412201799500A69CB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A2734412201799500A69CB1 /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
 		9A2734442201799500A69CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A2734472201799500A69CB1 /* PointyGoals.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PointyGoals.xcdatamodel; sourceTree = "<group>"; };
 		9A2734492201799600A69CB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A27344C2201799600A69CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A27344E2201799600A69CB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A27345922017E1E00A69CB1 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		9A27345B22017E3000A69CB1 /* GoalXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoalXib.xib; sourceTree = "<group>"; };
+		9A27345E220185B100A69CB1 /* GoalXibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalXibView.swift; sourceTree = "<group>"; };
+		9A27346022018C0500A69CB1 /* AddGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalVC.swift; sourceTree = "<group>"; };
+		9A27346322018D4500A69CB1 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		9A2734662201910800A69CB1 /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMPlaceholderTextView.swift; sourceTree = "<group>"; };
+		9A2734682201952900A69CB1 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		9A27346A2201963D00A69CB1 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		9A27346C22019FC700A69CB1 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
+		9A27346E2201A97F00A69CB1 /* SaveGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveGoalVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,73 @@
 		9A27343E2201799500A69CB1 /* PointyGoals */ = {
 			isa = PBXGroup;
 			children = (
+				9A273465220190F100A69CB1 /* Supporting Files */,
 				9A27343F2201799500A69CB1 /* AppDelegate.swift */,
-				9A2734412201799500A69CB1 /* ViewController.swift */,
 				9A2734432201799500A69CB1 /* Main.storyboard */,
+				9A27346222018D2800A69CB1 /* Extensions */,
+				9A27345722017DCD00A69CB1 /* Xibs */,
+				9A27345422017D9F00A69CB1 /* Views */,
+				9A27345622017DC400A69CB1 /* Cells */,
+				9A27345522017DB500A69CB1 /* Controllers */,
 				9A2734492201799600A69CB1 /* Assets.xcassets */,
 				9A27344B2201799600A69CB1 /* LaunchScreen.storyboard */,
 				9A27344E2201799600A69CB1 /* Info.plist */,
 				9A2734462201799500A69CB1 /* PointyGoals.xcdatamodeld */,
 			);
 			path = PointyGoals;
+			sourceTree = "<group>";
+		};
+		9A27345422017D9F00A69CB1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A27345E220185B100A69CB1 /* GoalXibView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A27345522017DB500A69CB1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9A2734412201799500A69CB1 /* GoalsVC.swift */,
+				9A27346022018C0500A69CB1 /* AddGoalVC.swift */,
+				9A27346E2201A97F00A69CB1 /* SaveGoalVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9A27345622017DC400A69CB1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9A27345922017E1E00A69CB1 /* GoalCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9A27345722017DCD00A69CB1 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				9A27345B22017E3000A69CB1 /* GoalXib.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		9A27346222018D2800A69CB1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9A27346322018D4500A69CB1 /* UIViewControllerExtension.swift */,
+				9A2734682201952900A69CB1 /* UIButtonExtension.swift */,
+				9A27346A2201963D00A69CB1 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9A273465220190F100A69CB1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A2734662201910800A69CB1 /* KMPlaceholderTextView.swift */,
+				9A27346C22019FC700A69CB1 /* GoalType.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +205,7 @@
 			files = (
 				9A27344D2201799600A69CB1 /* LaunchScreen.storyboard in Resources */,
 				9A27344A2201799600A69CB1 /* Assets.xcassets in Resources */,
+				9A27345C22017E3000A69CB1 /* GoalXib.xib in Resources */,
 				9A2734452201799500A69CB1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +217,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A27346B2201963D00A69CB1 /* UIViewExtension.swift in Sources */,
+				9A27345A22017E1E00A69CB1 /* GoalCell.swift in Sources */,
+				9A2734672201910800A69CB1 /* KMPlaceholderTextView.swift in Sources */,
 				9A2734482201799500A69CB1 /* PointyGoals.xcdatamodeld in Sources */,
-				9A2734422201799500A69CB1 /* ViewController.swift in Sources */,
+				9A27346D22019FC700A69CB1 /* GoalType.swift in Sources */,
+				9A2734422201799500A69CB1 /* GoalsVC.swift in Sources */,
+				9A27346F2201A97F00A69CB1 /* SaveGoalVC.swift in Sources */,
+				9A27346122018C0500A69CB1 /* AddGoalVC.swift in Sources */,
+				9A2734692201952900A69CB1 /* UIButtonExtension.swift in Sources */,
+				9A27345F220185B100A69CB1 /* GoalXibView.swift in Sources */,
+				9A27346422018D4500A69CB1 /* UIViewControllerExtension.swift in Sources */,
 				9A2734402201799500A69CB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
