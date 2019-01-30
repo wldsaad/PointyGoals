@@ -102,7 +102,23 @@ extension GoalsVC: UITableViewDataSource, UITableViewDelegate {
             }
         }
         
-        return [deleteAction]
+        let incrementAction = UITableViewRowAction(style: .normal, title: "Add") { (action, indexPath) in
+            var score = self.goals[indexPath.row].score
+            let target = self.goals[indexPath.row].target
+            score = (score < target) ? score + 1 : target
+            self.goals[indexPath.row].score = score
+            self.goalsTableView.reloadRows(at: [indexPath], with: .automatic)
+            do {
+                try context.save()
+            } catch {
+                debugPrint(error.localizedDescription)
+            }
+            
+        }
+        
+        incrementAction.backgroundColor = #colorLiteral(red: 1, green: 0.5764705882, blue: 0, alpha: 1)
+        
+        return [deleteAction, incrementAction]
     }
     
 }

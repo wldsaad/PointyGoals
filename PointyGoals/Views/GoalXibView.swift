@@ -13,6 +13,7 @@ class GoalXibView: UIView {
     @IBOutlet weak var goalLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var completionView: UIView!
     
     
 

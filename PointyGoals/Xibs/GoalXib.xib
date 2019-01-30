@@ -78,21 +78,42 @@
                         </label>
                     </subviews>
                 </stackView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HlN-3X-Jf6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMPLETED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xby-80-xTA">
+                            <rect key="frame" x="75.5" y="15.5" width="224.5" height="49.5"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="36"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.57647058819999997" blue="0.0" alpha="0.69865689212328763" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Xby-80-xTA" firstAttribute="centerY" secondItem="HlN-3X-Jf6" secondAttribute="centerY" id="HuJ-X4-bYF"/>
+                        <constraint firstItem="Xby-80-xTA" firstAttribute="centerX" secondItem="HlN-3X-Jf6" secondAttribute="centerX" id="K1Z-HS-7bZ"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="HlN-3X-Jf6" secondAttribute="bottom" id="8gZ-3H-TFc"/>
+                <constraint firstItem="HlN-3X-Jf6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="D1s-Jo-RxI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HlN-3X-Jf6" secondAttribute="trailing" id="Flt-77-qnx"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="P5l-S1-jrg" secondAttribute="trailing" constant="8" id="NhA-mH-KnP"/>
                 <constraint firstItem="P5l-S1-jrg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="TF9-tS-DXL"/>
                 <constraint firstItem="P5l-S1-jrg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="f1x-dl-YAQ"/>
+                <constraint firstItem="HlN-3X-Jf6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="yNg-gM-vTP"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="completionView" destination="HlN-3X-Jf6" id="VM9-oi-AXB"/>
                 <outlet property="goalLabel" destination="6Wx-Ii-OBD" id="gf0-W3-LY3"/>
                 <outlet property="scoreLabel" destination="ibg-AI-Bev" id="jWI-a9-KFL"/>
                 <outlet property="typeLabel" destination="eqs-7K-6F0" id="ZNI-hu-R6p"/>
             </connections>
-            <point key="canvasLocation" x="132" y="167.76611694152925"/>
+            <point key="canvasLocation" x="132" y="167.31634182908547"/>
         </view>
     </objects>
 </document>

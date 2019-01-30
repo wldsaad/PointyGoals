@@ -31,7 +31,7 @@ class GoalCell: UITableViewCell {
         goalView?.goalLabel.text = goal.title
         goalView?.typeLabel.text = goal.type
         goalView?.scoreLabel.text = String(describing: goal.score)
-        
+        goalView?.completionView.isHidden = goal.score < goal.target ? true : false
     }
 
 }
