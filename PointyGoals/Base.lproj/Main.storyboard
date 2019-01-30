@@ -320,22 +320,45 @@
                                 </state>
                                 <connections>
                                     <action selector="nextAction:" destination="Ldd-mt-Lln" eventType="touchUpInside" id="KTv-wk-38W"/>
+                                    <action selector="saveGoalAction:" destination="PL3-r2-z0j" eventType="touchUpInside" id="dD3-ha-pzk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many points to finish this goal?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1t-6n-ndN">
+                                <rect key="frame" x="50.5" y="130" width="274.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dGh-Iu-lxC">
+                                <rect key="frame" x="168.5" y="190.5" width="38.5" height="63"/>
+                                <color key="textColor" red="0.0" green="0.56078431370000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="52"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="mQl-ZG-2q5" firstAttribute="trailing" secondItem="ghR-zr-4Tq" secondAttribute="trailing" id="8pk-SK-oyO"/>
                             <constraint firstItem="7C0-sw-iO7" firstAttribute="bottom" secondItem="Dgo-V6-52D" secondAttribute="bottom" id="ESL-GB-QQ3"/>
                             <constraint firstItem="7C0-sw-iO7" firstAttribute="trailing" secondItem="ghR-zr-4Tq" secondAttribute="trailing" id="Emb-LU-pGL"/>
+                            <constraint firstItem="dGh-Iu-lxC" firstAttribute="top" secondItem="w1t-6n-ndN" secondAttribute="bottom" constant="40" id="Kax-s6-xoD"/>
                             <constraint firstItem="mQl-ZG-2q5" firstAttribute="leading" secondItem="ghR-zr-4Tq" secondAttribute="leading" id="Mxu-mz-dr2"/>
+                            <constraint firstItem="w1t-6n-ndN" firstAttribute="centerX" secondItem="Dgo-V6-52D" secondAttribute="centerX" id="NAP-NK-CMF"/>
                             <constraint firstItem="7C0-sw-iO7" firstAttribute="leading" secondItem="ghR-zr-4Tq" secondAttribute="leading" id="NEH-Xg-2Xj"/>
+                            <constraint firstItem="w1t-6n-ndN" firstAttribute="top" secondItem="mQl-ZG-2q5" secondAttribute="bottom" constant="30" id="jua-q5-7eT"/>
                             <constraint firstItem="mQl-ZG-2q5" firstAttribute="top" secondItem="Dgo-V6-52D" secondAttribute="top" id="kbg-ZJ-t7Z"/>
+                            <constraint firstItem="dGh-Iu-lxC" firstAttribute="centerX" secondItem="Dgo-V6-52D" secondAttribute="centerX" id="zZG-vL-c3D"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ghR-zr-4Tq"/>
                     </view>
+                    <connections>
+                        <outlet property="saveGoalButton" destination="7C0-sw-iO7" id="w5f-jD-CAB"/>
+                        <outlet property="targetTextField" destination="dGh-Iu-lxC" id="CSd-E8-V2T"/>
+                        <segue destination="4UO-Sb-j22" kind="unwind" identifier="dismissAllSegue" unwindAction="UNWIND_TO_GOALSVCWithSeque:" id="DJV-FY-66X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nvY-Gh-6I7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4UO-Sb-j22" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1678" y="134"/>
         </scene>
